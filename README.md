@@ -50,6 +50,8 @@ Binary outcome (conversion)
 
 Randomization enables clean causal estimation.
 
+Models were prototyped on a 2M stratified sample for rapid iteration and retrained on the full 14M dataset using optimized memory dtypes.
+
 🧠 Modeling Strategy
 Baselines
 
@@ -114,11 +116,17 @@ X-Learner Profit: $41,213
 
 Conversion Model Profit: $19,433
 
+
 Random: Loss
 
 🚀 Improvement
 
 X-Learner improves profit by ~112% over conversion targeting.
+
+Update profit to full-scale number (using 14M rows):
+
+X-Learner Maximum Profit: $134,804
+Optimal Targeting Fraction: ~3%
 
 🎯 Optimal Policy
 
@@ -152,6 +160,12 @@ Clear heterogeneity in treatment effects
 Some users exhibit negative uplift
 
 Confirms that treatment effect varies across users.
+
+Model Stability
+
+Optimal targeting fraction remained ~3% when scaling from 2M to full 14M dataset.
+
+Uplift ranking and profit improvements were consistent across dataset scales.
 
 📁 Project Structure
 data/
