@@ -77,21 +77,19 @@ $$\text{Profit} = (\text{Incremental Conversions} \times V) - (\text{Users Targe
 * **Heterogeneity**: Clear evidence that treatment effects vary; some users exhibit negative uplift (they are discouraged by the ad).
 * **Stability**: The optimal targeting fraction (~3%) remained consistent when scaling from the 2M prototype to the full 14M dataset.
 
----
-
 ## 📁 Project Structure
-text
-├── data/        # Criteo raw and processed samples
-├── notebooks/   # EDA, Prototyping, and Visualization
-├── src/         # Modular Python scripts
-│   ├── data.py       # Preprocessing & Memory Optimization
-│   ├── models.py     # T-Learner & X-Learner Implementations
-│   ├── uplift.py     # Causal Logic
-│   ├── economics.py  # Profit & Sensitivity Analysis
-│   └── evaluation.py # Qini & Metrics Logic
-└── README.md
 
----
+```text
+.
+├── data/               # Criteo raw and processed samples
+├── notebooks/          # EDA, Prototyping, and Visualization
+├── src/                # Modular Python scripts
+│   ├── data.py         # Preprocessing & Memory Optimization
+│   ├── models.py       # T-Learner & X-Learner Implementations
+│   ├── uplift.py       # Causal Logic
+│   ├── economics.py    # Profit & Sensitivity Analysis
+│   └── evaluation.py   # Qini & Metrics Logic
+└── README.md
 
 ## 🏁 Conclusion
 
